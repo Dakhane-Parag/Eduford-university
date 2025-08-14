@@ -1,47 +1,48 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-.header{
+.header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('banner.png');
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('banner.png');
     background-position: center;
     background-size: cover;
     position: relative;
 }
 
-nav{
+nav {
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
 }
 
-nav img{
+nav img {
     width: 150px;
 }
-.nav-links{
+
+.nav-links {
     flex: 1;
     text-align: right; 
 }
 
-.nav-links ul li{
+.nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
 }
 
-.nav-links ul li a{
+.nav-links ul li a {
     color: white;
     text-decoration: none;
     font-size: 13px;
 }
 
-.nav-links ul li::after{
+.nav-links ul li::after {
     content: '';
     width: 0%;
     height: 2px;
@@ -51,30 +52,31 @@ nav img{
     transition: 0.3s;
 }
 
-.nav-links ul li:hover::after{
+.nav-links ul li:hover::after {
     width: 100%;
 }
 
-.text-box{
+.text-box {
     width: 90%;
     color: white;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
-.text-box h1{
+.text-box h1 {
     font-size: 62px;
 }
-.text-box p{
+
+.text-box p {
     margin: 10px 0px 40px;
     font-size: 14px;
     color: white;
 }
 
-.hero-btn{
+.hero-btn {
     color: white;
     display: inline-block;
     position: relative;
@@ -84,110 +86,44 @@ nav img{
     cursor: pointer;
     font-size: 13px;
 }
-.hero-btn:hover{
+
+.hero-btn:hover {
     background-color: #f44336;
-    border:1px solid #f44336;
+    border: 1px solid #f44336;
     transition: 0.9s;
-
 }
 
-nav .fa{
-    display:none;
-}
-/* media */
-
-@media(max-width: 700px){
-    .text-box h1{
-        font-size: 23px;
-    }
-    .text-box p{
-        font-size: 12px;
-    }
-    .nav-links ul li{
-        display: block;
-    }
-    .nav-links{
-        position: absolute;
-        background: #f44336;
-        height: 100vh;
-        width: 200px;
-        top: 0px;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
-    }
-    nav .fa{
-        display: block;
-        color: white;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-    .nav-links ul{
-        margin: 10px;
-    }
-    .course h1{
-        font-size: 30px;
-    }
-    .row{
-        flex-direction: column;
-    }
-    .city img{
-    height: 300px;
-    width: 200px;
-    /* display: block; */
-    }
-    .campus h1{
-        font-size: 30px ;
-        text-align: center;
-        width: auto;
-    }
-    .campus .cities{
-        display: block;
-    }
-    .campus{
-        padding: 0px;
-    }
-    
-    .fac{
-        flex-direction: column;
-    }
-    .student{
-        flex-direction: column;
-     }
-    .stu{
-        width: 10px;
-            
-    }
-
+nav .fa {
+    display: none;
 }
 
 /* course */
-.course{
-    width:80%;
+.course {
+    width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
 }
-h1{
+
+h1 {
     font-size: 36px;
     font-weight: 600;
 }
 
-p{
+p {
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
 }
-.row{
+
+.row {
     display: flex;
     margin-top: 5%;
     justify-content: space-between;
 }
 
-.course-column{
+.course-column {
     flex-basis: 31%;
     background: #ffecec;
     border-radius: 10px;
@@ -196,68 +132,63 @@ p{
     box-sizing: border-box;
 }
 
-.course-column h3{
+.course-column h3 {
     font-weight: 600;
     text-align: center;
     margin: 10px 0;
 }
-.course-column:hover{
+
+.course-column:hover {
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
     transition: 0.9s;
 }
 
-
 /* campus */
-.campus{
+.campus {
     width: 88%;
     text-align: center;
     margin: auto;
     padding: 70px 0px;
 }
- /* h1{
-    font-size: 36px;
-    font-weight: 600;
- } */
-    
-.cities{
+
+.cities {
     display: flex;
     margin-top: 3%;
     justify-content: space-between;
 }
-.city img{
+
+.city img {
     height: 551px;
     width: 350px;
     background-size: cover;
     position: relative;
     border-radius: 10px;
-    
 }
 
-.city{
+.city {
     flex-basis: 31%;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
-    
 }
 
-.layer{
+.layer {
     background: transparent;
     height: 100%;
     width: 100%;
     position: relative;
-    top:0;
+    top: 0;
     left: 0;
     transition: 0.5s;
-    top: -562px;
 }
-.layer:hover{
+
+.layer:hover {
     background: rgba(255, 84, 198, 0.4);
     border-radius: 10px;
-    bottom: 0;
 }
-.layer h4{
+
+.layer h4 {
     width: 100%;
     font-weight: 500;
     color: white;
@@ -269,133 +200,276 @@ p{
     opacity: 0;
     transition: 0.5s;
 }
-.layer:hover h4{
+
+.layer:hover h4 {
     opacity: 1;
     bottom: 49%;
 }
 
-.facilities{
+/* facilities */
+.facilities {
     width: 90%;
     text-align: center;
     margin: auto;
 }
-.fac{
+
+.fac {
     display: flex;
     padding: 30px 0px;
 }
-.facilities img{
+
+.facilities img {
     height: 300px;
     border-radius: 10px;
     margin: 10px;
     padding-bottom: 20px;
 }
-.facility p{
+
+.facility p {
     text-align: left;
     margin: 10px;
 }
 
-.says{
+/* says section */
+.says {
     width: 90%;
     text-align: center;
     margin: auto;
     padding: 70px 0px;
 }
 
-.student{
+.student {
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
 }
 
-.says img{
+.says img {
     border-radius: 50%;
     height: 50px;
     margin-top: 30px;
     margin-left: 30px;
 }
-.stu{
+
+.stu {
     display: flex;
     background-color: #ffecec;
-    width:580px;
-    border-radius:15px;
+    width: 580px;
+    border-radius: 15px;
     height: 200px;
 }
 
-.info{
+.info {
     padding: 20px 15px;
     text-align: left;
 }
-#Abhishek{
-    padding-top: 15px;
 
+#Abhishek {
+    padding-top: 15px;
 }
+
 /* Footer Styling */
 .footer {
-  background-color: #1a1a1a;
-  color: white;
-  padding: 40px 0;
-  font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
 }
 
 .footer-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 1100px;
-  margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
 }
 
 .footer h3 {
-  margin-bottom: 15px;
-  color: #f1c40f;
+    margin-bottom: 15px;
+    color: #f1c40f;
 }
 
 .footer p,
 .footer a {
-  font-size: 14px;
-  color: #ccc;
-  text-decoration: none;
+    font-size: 14px;
+    color: #ccc;
+    text-decoration: none;
 }
 
 .footer a:hover {
-  color: #f1c40f;
+    color: #f1c40f;
 }
 
 .footer-links ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .footer-links li {
-  margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .footer-newsletter form {
-  display: flex;
+    display: flex;
 }
 
 .footer-newsletter input {
-  padding: 8px;
-  border: none;
-  outline: none;
-  width: 200px;
-  border-radius: 4px 0 0 4px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    width: 200px;
+    border-radius: 4px 0 0 4px;
 }
 
 .footer-newsletter button {
-  padding: 8px 15px;
-  border: none;
-  background-color: #f1c40f;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 0 4px 4px 0;
+    padding: 8px 15px;
+    border: none;
+    background-color: #f1c40f;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
 }
 
 .footer-bottom {
-  text-align: center;
-  padding-top: 20px;
-  border-top: 1px solid #333;
-  margin-top: 20px;
-  font-size: 13px;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+    .row, .fac, .student, .cities {
+        flex-direction: column;
+        align-items: center;
+    }
+    .course-column, .facility, .city, .stu {
+        flex-basis: 100%;
+        max-width: 90%;
+    }
+    .city img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 2% 4%;
+    }
+
+    .text-box h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+    .text-box p {
+        font-size: 13px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .footer-newsletter form {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+    }
+    .footer-newsletter input {
+        width: 100%;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+    .footer-newsletter button {
+        width: 100%;
+        border-radius: 4px;
+    }
+}
+
+@media (max-width: 700px) {
+    .text-box h1 {
+        font-size: 23px;
+    }
+    .text-box p {
+        font-size: 12px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0px;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        margin: 10px;
+    }
+    .course h1 {
+        font-size: 30px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .city img {
+        height: auto;
+        width: 100%;
+    }
+    .campus h1 {
+        font-size: 30px;
+        text-align: center;
+        width: auto;
+    }
+    .campus .cities {
+        display: block;
+    }
+    .campus {
+        padding: 0px;
+    }
+    .fac {
+        flex-direction: column;
+    }
+    .student {
+        flex-direction: column;
+    }
+    .stu {
+        width: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-btn {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+    .text-box h1 {
+        font-size: 24px;
+    }
+    .text-box p {
+        font-size: 12px;
+    }
+    .stu {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+    .stu img {
+        margin: auto;
+    }
 }
